@@ -47,7 +47,7 @@
                     this.loading = false;
                     if (this.list.length >= 60) {
                         this.finished = true;
-						// alert("没有了，")
+						alert("加载中，")
                     }
                 }, 1000);
             },
@@ -57,6 +57,7 @@
                     this.isLoading = false;
                     this.list = []
                     this.onLoad()
+					alert("下拉刷新")
                 }, 500);
             }
         },
